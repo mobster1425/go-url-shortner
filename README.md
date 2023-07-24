@@ -54,12 +54,12 @@ Copy code
 ]
 Save these mappings in a file named data.json in the data directory.
 
-How the Redirection Works
+# How the Redirection Works
 When the URL shortener receives an incoming request, it will look for a match between the requested path and the mappings defined in the YAML and JSON files. If a match is found, the server will redirect the user to the corresponding target URL. If no match is found, the server will return a "Not Found" response.
 
 
 
-License
+# License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 

@@ -11,7 +11,7 @@ To use the URL shortener, follow these steps:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/go-url-shortener.git
+git clone https://github.com/mobster1425/go-url-shortener.git
 Navigate to the project directory:
 bash
 Copy code
@@ -57,8 +57,7 @@ Save these mappings in a file named data.json in the data directory.
 How the Redirection Works
 When the URL shortener receives an incoming request, it will look for a match between the requested path and the mappings defined in the YAML and JSON files. If a match is found, the server will redirect the user to the corresponding target URL. If no match is found, the server will return a "Not Found" response.
 
-Contributing
-If you would like to contribute to this project, feel free to create pull requests or report issues on the GitHub repository at https://github.com/your-username/go-url-shortener.
+
 
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.

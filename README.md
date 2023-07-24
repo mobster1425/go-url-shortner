@@ -5,21 +5,23 @@ This is a simple URL shortener built using Go that redirects incoming web reques
 # How It Works
 The URL shortener uses an http.Handler implementation to handle incoming requests. The main logic is built around the concept of mapping paths to their corresponding target URLs. The server maintains a list of path-to-URL mappings and checks incoming requests against this list to determine if a redirection is required.
 
-Getting Started
+# Getting Started
 To use the URL shortener, follow these steps:
 
-Clone the repository:
-bash
+# Clone the repository:
+
 Copy code
 git clone https://github.com/mobster1425/go-url-shortener.git
 Navigate to the project directory:
-bash
-Copy code
+
+
+# Copy code
 cd go-url-shortener
 Build and run the application:
-go
-Copy code
+
 go run main.go -yaml=paths.yaml -db=urlshort.db -json=data.json
+
+
 The URL shortener will start listening on port 8080.
 
 # Adding Redirections

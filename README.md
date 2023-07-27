@@ -10,17 +10,22 @@ To use the URL shortener, follow these steps:
 
 # Clone the repository:
 
-Copy code
+``` bash
 git clone https://github.com/mobster1425/go-url-shortener.git
+```
 Navigate to the project directory:
 
 
-# Copy code
+``` bash
 cd go-url-shortener
-Build and run the application:
+```
 
+
+# Build and run the application:
+
+``` bash
 go run main.go -yaml=paths.yaml -db=urlshort.db -json=data.json
-
+```
 
 The URL shortener will start listening on port 8080.
 
@@ -31,19 +36,19 @@ To add new redirections, you need to define the mappings in either YAML or JSON 
 The YAML format should be as follows:
 
 yaml
-Copy code
+``` bash
 - path: /short
   url: https://www.somesite.com/a-very-long-url
 
 - path: /dogs
   url: https://www.somesite.com/a-story-about-dogs
 Save these mappings in a file named paths.yaml in the data directory.
-
+ ```
 # JSON Format
 The JSON format should be as follows:
 
 json
-Copy code
+``` bash
 [
   {
     "path": "/short",
@@ -54,6 +59,8 @@ Copy code
     "url": "https://www.somesite.com/a-story-about-dogs"
   }
 ]
+```
+
 Save these mappings in a file named data.json in the data directory.
 
 # How the Redirection Works
@@ -61,8 +68,7 @@ When the URL shortener receives an incoming request, it will look for a match be
 
 
 
-# License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
 
 

@@ -42,8 +42,10 @@ yaml
 
 - path: /dogs
   url: https://www.somesite.com/a-story-about-dogs
+```
+
 Save these mappings in a file named paths.yaml in the data directory.
- ```
+
 # JSON Format
 The JSON format should be as follows:
 
